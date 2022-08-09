@@ -1,5 +1,12 @@
 .banner-part {
-    /* height: 100vh; */
+
+    .banner-slider{
+        position: 65px 0;
+        display: flex;
+        position: relative;
+        flex-wrap: wrap;
+    
+
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -20,6 +27,7 @@
         background-color: rgba(191, 61, 66, 1);
         mix-blend-mode: darken;
     }
+}
     h1{
         color: white;
     }
@@ -245,4 +253,41 @@
         display: inline-block;
         vertical-align: top;
     }
+
+
+.slick-arrow{
+    font-size: 52px;
+    color: $red;
+    line-height: 1;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%);
+    z-index: 9;
+    
+
+
+    &.slick-next {
+        right: 0;
+    }
+
+    &.slick-prev {
+        left: 0;
+    }
+
+    i{
+        @include animate(color,0.35sec,linear);
+    }
+
+    &:hover {
+        i{
+            color: darken($red, 10%);
+        }
+    }
+
 }
+
+.feedback-slider {
+    padding: 0 60px;
+}
+}
+
