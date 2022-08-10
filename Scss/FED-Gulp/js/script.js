@@ -29,7 +29,7 @@ jQuery('.feedback-slider').slick({
 });
 
 jQuery('.banner-slider').slick({
-  dots: false,
+  dots: true,
   infinite: false,
   speed: 300,
   slidesToShow: 1,
